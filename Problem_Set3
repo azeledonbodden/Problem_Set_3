@@ -1,0 +1,58 @@
+##
+
+def main():
+    filepath = 'CO-OPS__8729108__wl.csv'
+    maximum = 0
+    with open('CO-OPS__8729108__wl.csv','r') as fp:
+        for line in fp:
+            line_bits = line.split(",")
+           # print (line_bits)
+            try:   
+                next_item = float(line_bits[1])
+            except:
+                continue
+            if next_item > maximum:
+                maximum = next_item
+                date = line_bits[0]
+    print(maximum, date)
+    
+    main()
+    
+ 
+ 
+##
+    import pandas as pd
+
+df = pd.read_csv('CO-OPS__8729108__wl.csv')
+
+df.loc[df[' Water Level'].idxmax()]
+
+
+
+##
+    maximum = 0
+    previous_line = 0
+    maxdiff = 0
+    with open('CO-OPS__8729108__wl.csv','r') as fp:
+        for line in fp:
+            line_bits = line.split(",")
+           # print (line_bits)
+            try:   
+                next_item = float(line_bits[1])
+                
+            except:
+                continue
+            if next_item > maximum:
+                maximum = next_item
+                date = line_bits[0]
+            
+            diff = previous_line - next_item
+            
+            if diff > maxdiff:
+                maxdiff = diff
+                datemax = line_bits[0]
+            previous_line = next_item
+                
+    print(maximum, date)
+    print(maxdiff, datemax)
+

@@ -1,4 +1,5 @@
 ##
+    #Problem 1
 
 def main():
     filepath = 'CO-OPS__8729108__wl.csv'
@@ -21,6 +22,8 @@ def main():
  
  
 ##
+    #Problem 2
+
     import pandas as pd
 
 df = pd.read_csv('CO-OPS__8729108__wl.csv')
@@ -30,6 +33,8 @@ df.loc[df[' Water Level'].idxmax()]
 
 
 ##
+    #Problem 3
+
     maximum = 0
     previous_line = 0
     maxdiff = 0

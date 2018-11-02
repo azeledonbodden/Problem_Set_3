@@ -1,7 +1,6 @@
 Problem_Set_3
 
    # Problem_1
-   
 #This script opens a file, uses a for loop to read through the file line by line 
 #and calculate the maximum water lavel and the date in which it was observed. 
 
@@ -26,7 +25,6 @@ def main():
     
     
     # Problem_2
-
 #This script imports pandas and opens a file into the pandas dateframe.
 #It then calculates the maximum water level with the date and time it was observed.
 
@@ -39,7 +37,6 @@ df.loc[df[' Water Level'].idxmax()]
 
 
     # Problem_3
-
 #This script opens a file, calculates the fastest rise in water level per 6-minute period between measurements 
 #and provides the time and date in which it was observed aswell as the chenge in water level during that period.
 

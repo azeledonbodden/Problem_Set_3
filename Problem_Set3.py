@@ -2,7 +2,7 @@ Problem_Set_3
 
    # Problem_1
 #This script opens a file, uses a for loop to read through the file line by line 
-#and calculate the maximum water lavel and the date in which it was observed. 
+#and calculate the maximum water level and the date in which it was observed. 
 
 def main():
     filepath = 'CO-OPS__8729108__wl.csv'
@@ -38,7 +38,7 @@ df.loc[df[' Water Level'].idxmax()]
 
     # Problem_3
 #This script opens a file, calculates the fastest rise in water level per 6-minute period between measurements 
-#and provides the time and date in which it was observed aswell as the chenge in water level during that period.
+#and provides the time and date in which it was observed as well as the change in water level during that period.
 
     maximum = 0
     previous_line = 0
